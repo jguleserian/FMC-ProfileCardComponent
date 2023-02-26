@@ -1,0 +1,174 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+  /*-----GLOBAL/PAGE-----*/
+  
+   :root {
+      /*---Colors---*/
+      --darkCyan: hsl(185, 75%, 39%);
+      --darkDesaturatedBlue: hsl(229, 23%, 23%);
+      --darkGrayishBlue: hsl(227, 10%, 46%);
+      --darkGray: hsl(0, 0%, 59%);
+      /*---Typography---*/
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 62.5%;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-sizing: border-box;
+  }
+  
+  body {
+      width: 144rem;
+      height: 72rem;
+  }
+  
+  h1 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      left: -3000px;
+  }
+  
+  h2,
+  h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2.2rem;
+      color: var(--darkDesaturatedBlue);
+  }
+  /* ----SECTION---- */
+  
+  #profile-card {
+      background-color: var(--darkCyan);
+  }
+  
+  .bg-image-top {
+      position: absolute;
+      width: 97.8rem;
+      left: -30rem;
+      top: -49rem;
+      overflow: hidden;
+  }
+  
+  .bg-image-bottom {
+      position: absolute;
+      width: 97.8rem;
+      left: 69rem;
+      top: 38.5rem;
+      overflow: hidden;
+  }
+  
+  @media screen and (max-width: 37.5rem) {
+      #profile-card {
+          width: 37.5rem;
+          height: 66.7rem;
+      }
+      bg-image-top {
+          width: 62.1rem;
+      }
+      bg-image-bottom {
+          width: 62.1rem;
+      }
+  }
+  
+  #main {
+      position: relative;
+      top: calc((100vh - 37.4rem) / 2);
+      left: calc((100vw - 35rem) / 2);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 35rem;
+      height: 37.4rem;
+      border-radius: 1.5rem;
+      background-color: white;
+      overflow: hidden;
+      ;
+      box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.51);
+  }
+  
+  @media screen and (max-width: 37.5rem) {
+      #main {
+          width: 32.6rem;
+          left: calc(((100vw - 32.6rem)/2));
+      }
+  }
+  
+  #demographic {
+      position: relative;
+      min-height: 28.4rem;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #E8E9EC;
+      overflow: hidden;
+  }
+  
+  .bg-image-card {
+      position: relative;
+      width: 35rem;
+      object-fit: cover;
+      left: calc((35rem - 100%)* -0.5);
+  }
+  
+  .img-hero {
+      position: absolute;
+      top: 8.7rem;
+      left: calc((100% - 10.6rem)/2);
+      width: 10.6rem;
+      border-radius: 50%;
+      border: .5rem solid #FFFFFF;
+  }
+  
+  .name {
+      margin-top: 6.6rem;
+  }
+  
+  .age {
+      margin-left: .8rem;
+      color: var(--darkGrayishBlue);
+  }
+  
+  .hometown {
+      margin: .9rem auto 2.8rem auto;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+  }
+  
+  #social {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 35rem;
+      height: 100%;
+      padding: 2.2rem 5rem 2.4rem 5rem;
+  }
+  
+  .social {
+      text-align: center;
+  }
+  
+  .social>p {
+      margin-top: .6rem;
+      letter-spacing: 1.5px;
+  }
+  
+  @media screen and (max-width: 37.5rem) {
+      #social {
+          width: 32.6rem;
+          padding: 2.2rem 5.2rem 2.4rem 4.1rem;
+      }
+  }
+  
+  #attribution {
+      position: absolute;
+      bottom: -2rem;
+      font-size: 11px;
+      text-align: center;
+  }
+  
+  #attribution a {
+      color: hsl(228, 45%, 44%);
+  }
