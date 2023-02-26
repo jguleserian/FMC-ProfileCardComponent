@@ -93,7 +93,7 @@
   @media screen and (max-width: 37.5rem) {
       #main {
           width: 32.6rem;
-          left: calc(((100vw - 32.6rem)/2));
+          left: calc(((100vw - 32.6rem) / 2));
       }
   }
   
